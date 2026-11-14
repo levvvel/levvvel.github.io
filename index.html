@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VEXORIUM creates software tools. Discover xMiNeR, a Windows application inspired by the NerdMiner V2 solo-mining concept.">
+  <meta name="theme-color" content="#090d18">
+  <title>VEXORIUM — Software Beyond Limits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090d18;--panel:#111827;--muted:#9aa7bd;--text:#f4f7ff;--accent:#8b7cff;--accent2:#36d6c5;--line:rgba(255,255,255,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(91,75,210,.18),transparent 36%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{padding:24px 0;border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font:700 22px "Space Grotesk";letter-spacing:.12em}.brand span{color:var(--accent2)}.navright{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:14px}
+    .lang{background:transparent;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer}
+    .hero{padding:100px 0 82px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:60px}
+    .eyebrow{color:var(--accent2);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+    h1,h2,h3{font-family:"Space Grotesk";line-height:1.1}h1{font-size:clamp(44px,6vw,72px);margin:18px 0}h1 em{font-style:normal;color:var(--accent2)}
+    .lead{font-size:18px;color:var(--muted);max-width:610px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;font-weight:700;font-size:14px}
+    .primary{background:linear-gradient(110deg,var(--accent),#6554df);color:white;box-shadow:0 12px 35px rgba(111,91,240,.25)}.secondary{border:1px solid var(--line);color:var(--text)}
+    .visual{min-height:330px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(139,124,255,.17),rgba(54,214,197,.06)),#101729;display:grid;place-items:center;position:relative;overflow:hidden}
+    .orb{width:210px;height:210px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#b9b0ff,#7060df 35%,#1d2750 70%);box-shadow:0 0 90px rgba(139,124,255,.4);display:grid;place-items:center;font:700 48px "Space Grotesk";letter-spacing:-.08em}
+    .visual:before,.visual:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.12);border-radius:50%;width:300px;height:300px}.visual:after{width:390px;height:390px}
+    section{padding:68px 0;border-top:1px solid var(--line)}.sectionhead{max-width:680px;margin-bottom:30px}h2{font-size:clamp(30px,4vw,44px);margin:10px 0 14px}.muted{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:rgba(17,24,39,.82);border:1px solid var(--line);border-radius:18px;padding:24px}.icon{font-size:23px;color:var(--accent2)}.card h3{font-size:19px;margin:12px 0 8px}
+    .product{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.productbox{padding:30px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(140deg,rgba(139,124,255,.12),rgba(17,24,39,.8))}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(54,214,197,.1);color:var(--accent2);font-size:12px;font-weight:700}
+    .notice{border-left:3px solid #e7b75b;background:rgba(231,183,91,.08);padding:15px 18px;border-radius:0 12px 12px 0;color:#d9d1bd;font-size:14px;margin-top:20px}
+    footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:760px){.hero,.product{grid-template-columns:1fr}.hero{padding:70px 0 55px;gap:35px}.visual{min-height:260px}.cards{grid-template-columns:1fr}.navright a{display:none}}
+  </style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#">VEXOR<span>IUM</span></a>
+  <nav class="navright"><a href="#about" data-en="About" data-tr="Hakkımızda">About</a><a href="#product" data-en="Product" data-tr="Ürün">Product</a><a href="#contact" data-en="Contact" data-tr="İletişim">Contact</a><button class="lang" id="langBtn">TR</button></nav>
+</div></header>
+<main>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow" data-en="Independent software studio" data-tr="Bağımsız yazılım stüdyosu">Independent software studio</div>
+      <h1 data-en="Software for the <em>curious</em>." data-tr="<em>Merak edenler</em> için yazılım.">Software for the <em>curious</em>.</h1>
+      <p class="lead" data-en="VEXORIUM is an independent software brand focused on building practical desktop tools. We believe useful software should be clear, approachable and thoughtfully made." data-tr="VEXORIUM, kullanışlı masaüstü araçları geliştirmeye odaklanan bağımsız bir yazılım markasıdır. Yararlı yazılımların anlaşılır, erişilebilir ve özenle geliştirilmiş olması gerektiğine inanıyoruz.">VEXORIUM is an independent software brand focused on building practical desktop tools. We believe useful software should be clear, approachable and thoughtfully made.</p>
+      <div class="actions"><a class="btn primary" href="#product" data-en="Discover xMiNeR" data-tr="xMiNeR'ı keşfet">Discover xMiNeR</a><a class="btn secondary" href="#about" data-en="Learn about us" data-tr="Bizi tanıyın">Learn about us</a></div>
+    </div>
+    <div class="visual" aria-label="VEXORIUM abstract brand artwork"><div class="orb">VX</div></div>
+  </div>
+  <section id="about"><div class="wrap">
+    <div class="sectionhead"><div class="eyebrow" data-en="Who we are" data-tr="Biz kimiz">Who we are</div><h2 data-en="Small studio. Clear purpose." data-tr="Küçük stüdyo. Net amaç.">Small studio. Clear purpose.</h2><p class="muted" data-en="We create software experiences with a focus on usability, transparency and continuous improvement." data-tr="Kullanılabilirlik, şeffaflık ve sürekli gelişim odağıyla yazılım deneyimleri oluşturuyoruz.">We create software experiences with a focus on usability, transparency and continuous improvement.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">✦</div><h3 data-en="Practical tools" data-tr="İşlevsel araçlar">Practical tools</h3><p class="muted" data-en="Software designed around a clear purpose and real user needs." data-tr="Net bir amaca ve gerçek kullanıcı ihtiyaçlarına göre tasarlanan yazılımlar.">Software designed around a clear purpose and real user needs.</p></article>
+      <article class="card"><div class="icon">⌘</div><h3 data-en="Thoughtful design" data-tr="Özenli tasarım">Thoughtful design</h3><p class="muted" data-en="Straightforward interfaces that help people understand what an application does." data-tr="Kullanıcının uygulamanın ne yaptığını anlamasına yardımcı olan sade arayüzler.">Straightforward interfaces that help people understand what an application does.</p></article>
+      <article class="card"><div class="icon">◎</div><h3 data-en="Transparency" data-tr="Şeffaflık">Transparency</h3><p class="muted" data-en="Clear product information, honest limitations and accessible support." data-tr="Açık ürün bilgileri, dürüst sınırlamalar ve erişilebilir destek.">Clear product information, honest limitations and accessible support.</p></article>
+    </div>
+  </div></section>
+  <section id="product"><div class="wrap product">
+    <div><div class="eyebrow" data-en="Our product" data-tr="Ürünümüz">Our product</div><h2>xMiNeR</h2><span class="tag" data-en="Windows desktop software" data-tr="Windows masaüstü yazılımı">Windows desktop software</span>
+      <p class="muted" data-en="xMiNeR is a Windows application inspired by the Bitcoin solo-mining concept demonstrated by projects such as NerdMiner V2. Explore the application and its mining-related features." data-tr="xMiNeR, NerdMiner V2 gibi projelerde görülen Bitcoin solo mining yaklaşımından esinlenen bir Windows uygulamasıdır. Uygulamayı ve madencilikle ilgili özelliklerini keşfedin.">xMiNeR is a Windows application inspired by the Bitcoin solo-mining concept demonstrated by projects such as NerdMiner V2. Explore the application and its mining-related features.</p>
+      <div class="notice" data-en="Important: Bitcoin solo mining is highly unlikely to find a block, especially with low computing power. xMiNeR does not guarantee Bitcoin, rewards, income or profit." data-tr="Önemli: Bitcoin solo mining ile blok bulma olasılığı, özellikle düşük işlem gücünde, son derece düşüktür. xMiNeR Bitcoin, ödül, gelir veya kâr garantisi vermez.">Important: Bitcoin solo mining is highly unlikely to find a block, especially with low computing power. xMiNeR does not guarantee Bitcoin, rewards, income or profit.</div>
+    </div>
+    <div class="productbox"><div class="eyebrow" data-en="Coming into focus" data-tr="Yakında burada">Coming into focus</div><h3 data-en="More product details coming soon" data-tr="Ürün detayları yakında eklenecek">More product details coming soon</h3><p class="muted" data-en="We are preparing the full feature list, system requirements, screenshots, documentation and purchase information. Check back soon." data-tr="Özellik listesini, sistem gereksinimlerini, ekran görüntülerini, kullanım kılavuzunu ve satın alma bilgilerini hazırlıyoruz. Yakında tekrar ziyaret edin.">We are preparing the full feature list, system requirements, screenshots, documentation and purchase information. Check back soon.</p><span class="tag" data-en="One-time purchase planned · Lifetime license planned" data-tr="Tek seferlik ödeme planlanıyor · Ömür boyu lisans planlanıyor">One-time purchase planned · Lifetime license planned</span></div>
+  </div></section>
+  <section id="contact"><div class="wrap"><div class="sectionhead"><div class="eyebrow" data-en="Get in touch" data-tr="İletişim">Get in touch</div><h2 data-en="Questions about VEXORIUM or xMiNeR?" data-tr="VEXORIUM veya xMiNeR hakkında sorularınız mı var?">Questions about VEXORIUM or xMiNeR?</h2><p class="muted" data-en="For product questions and support, contact us at the email address that will be published here." data-tr="Ürün soruları ve destek için burada yayımlanacak e-posta adresinden bize ulaşabilirsiniz.">For product questions and support, contact us at the email address that will be published here.</p><p class="muted"><strong data-en="Contact email:" data-tr="İletişim e-postası:">Contact email:</strong> [ADD YOUR SUPPORT EMAIL]</p></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> VEXORIUM. <span data-en="All rights reserved." data-tr="Tüm hakları saklıdır.">All rights reserved.</span></span><span data-en="Independent software brand" data-tr="Bağımsız yazılım markası">Independent software brand</span></div></footer>
+<script>
+  document.getElementById('year').textContent=new Date().getFullYear();
+  let lang='en';
+  document.getElementById('langBtn').addEventListener('click',()=>{
+    lang=lang==='en'?'tr':'en';document.documentElement.lang=lang;
+    document.querySelectorAll('[data-en]').forEach(el=>{el.innerHTML=el.dataset[lang]});
+    document.getElementById('langBtn').textContent=lang==='en'?'TR':'EN';
+  });
+</script>
+</body></html>
